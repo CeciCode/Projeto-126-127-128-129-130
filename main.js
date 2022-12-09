@@ -47,4 +47,12 @@ function draw() {
           document.getElementById("playing").innerHTML= "Música tocando: Echo";
         }
     }
+    if(scoreRightWrist > 0.2) {
+        circle(rightWristX, rightWristY, 20);
+        song1.stop();
+        if(song2.isPlaying() == false) {
+          song2.play();
+          document.getElementById("playing").innerHTML= "Música tocando: Jackpot Sad Girl";
+        }
+    }
 }
